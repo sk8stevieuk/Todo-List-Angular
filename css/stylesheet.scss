@@ -1,0 +1,100 @@
+/* Define custom fonts */
+
+@font-face {
+    font-family: chalkline;
+    src: url(../fonts/ChalkLine.otf);
+}
+
+@font-face {
+    font-family: chalkboard;
+    src: url(../fonts/Chalkboard.ttf);
+}
+
+/* Set Variables */
+
+$title-font: "chalkline";
+$list-icon-size: 24px;
+
+
+/* Main Styles */
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1 {
+    font-family: $title-font;
+    color: #fff;
+    font-size: 4em;
+    opacity: 0.85;
+}
+
+label {
+    font-family: "chalkboard";
+    color: #fff;
+    font-size: 2.5em;
+    letter-spacing: 5px;
+}
+
+.striked {
+    text-decoration: line-through;
+    color: darkseagreen;
+}
+
+.nameInput {
+    font-size: 2em;
+}
+
+.list {
+    
+    p {
+        display: inline;
+        padding: 0 10px;
+    }
+    
+    img {
+        padding: 0 4px;
+        width: $list-icon-size;
+        height: $list-icon-size;
+        opacity: 0.8;
+    }
+    
+    &:hover {
+        cursor: pointer;
+    }
+    
+    .checkbox {
+        width: $list-icon-size;
+        height: $list-icon-size;
+    }
+    
+}
+
+.new-task {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    font-family: "chalkboard";
+    color: darkseagreen;
+    font-size: 1.5em;
+    opacity: 0.8;
+    
+    h3 {
+        margin: 0;
+    }
+    
+    span {
+        font-size: 2em;
+    }
+}
+
+.new-task:hover {
+    cursor: pointer;
+}
